@@ -7,10 +7,18 @@ import { HelloComponent } from './hello.component';
 
 import { DemoMaterialModule } from './material.module';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, DemoMaterialModule ],
-  declarations: [ AppComponent, HelloComponent, ToolbarComponent ],
+  imports:      [ 
+    BrowserModule,
+    FormsModule, 
+    DemoMaterialModule,
+    AppRoutingModule ],
+  declarations: [ 
+      AppComponent, 
+      HelloComponent, 
+      ToolbarComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
