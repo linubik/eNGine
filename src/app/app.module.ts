@@ -5,9 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
+import { DemoMaterialModule } from './material.module';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
+  imports:      [ BrowserModule, FormsModule, DemoMaterialModule ],
+  declarations: [ AppComponent, HelloComponent, ToolbarComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
