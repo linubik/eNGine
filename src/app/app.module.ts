@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
 
 import { DemoMaterialModule } from './material.module';
 import { ToolbarComponent } from './toolbar/toolbar.component';
@@ -20,7 +19,6 @@ import { CriteresComponent } from './criteres/criteres.component';
     RouterModule ],
   declarations: [ 
       AppComponent, 
-      HelloComponent, 
       ToolbarComponent,
       CriteresComponent
        ],
