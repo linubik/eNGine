@@ -8,13 +8,15 @@ import { HelloComponent } from './hello.component';
 import { DemoMaterialModule } from './material.module';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RouterModule } from '@angular/router/router';
 
 @NgModule({
   imports:      [ 
     BrowserModule,
     FormsModule, 
     DemoMaterialModule,
-    AppRoutingModule ],
+    AppRoutingModule,
+    RouterModule ],
   declarations: [ 
       AppComponent, 
       HelloComponent, 
