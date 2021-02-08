@@ -9,6 +9,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { CriteresComponent } from './criteres/criteres.component';
+import { ResultatComponent } from './resultat/resultat.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   imports:      [ 
@@ -16,11 +18,13 @@ import { CriteresComponent } from './criteres/criteres.component';
     FormsModule, 
     DemoMaterialModule,
     AppRoutingModule,
-    RouterModule ],
+    RouterModule,
+    BrowserAnimationsModule ],
   declarations: [ 
       AppComponent, 
       ToolbarComponent,
-      CriteresComponent
+      CriteresComponent,
+      ResultatComponent
        ],
   bootstrap:    [ AppComponent ]
 })

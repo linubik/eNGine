@@ -4,11 +4,13 @@ import { CommonModule } from '@angular/common';
 import { CriteresComponent } from './criteres/criteres.component';
 import { CritereAutoComponent} from './criteres/auto/critere.auto.component';
 import { CritereHA2Component} from './criteres/ha2/critere.ha2.component';
+import { ResultatComponent } from './resultat/resultat.component';
 
 const routes: Routes = [
   { path: 'criteres', component: CriteresComponent },
   { path: 'criteres/auto', component: CritereAutoComponent },
-  { path: 'criteres/ha2', component: CritereHA2Component }
+  { path: 'criteres/ha2', component: CritereHA2Component },
+  { path: 'resultat', component:ResultatComponent}
 ];
 
 @NgModule({

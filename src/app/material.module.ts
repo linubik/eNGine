@@ -19,7 +19,6 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatDialogModule} from '@angular/material/dialog';
-import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatInputModule} from '@angular/material/input';
@@ -35,12 +34,13 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
-import {MatSortModule} from '@angular/material/sort';
-import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
 */
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatSortModule} from '@angular/material/sort';
+import {MatTableModule} from '@angular/material/table';
 /*
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
@@ -67,7 +67,6 @@ import {OverlayModule} from '@angular/cdk/overlay';
     MatStepperModule,
     MatDatepickerModule,
     MatDialogModule,
-    MatDividerModule,
     MatExpansionModule,
     MatGridListModule,
     MatInputModule,
@@ -84,12 +83,13 @@ import {OverlayModule} from '@angular/cdk/overlay';
     MatSliderModule,
     MatSlideToggleModule,
     MatSnackBarModule,
-    MatSortModule,
-    MatTableModule,
     MatTabsModule,
   */
     MatToolbarModule,
     MatIconModule,
+    MatDividerModule,
+    MatSortModule,
+    MatTableModule,
   /*
     MatTooltipModule,
     MatTreeModule,
