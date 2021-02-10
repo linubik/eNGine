@@ -32,7 +32,7 @@ const ELEMENT_DATA: Client[] = [
   templateUrl: 'resultat.component.html',
 })
 export class ResultatComponent implements AfterViewInit {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['numClient', 'nom', 'prenom', 'autre'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   @ViewChild(MatSort) sort: MatSort;
