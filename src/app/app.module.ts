@@ -12,6 +12,8 @@ import { CriteresComponent } from './criteres/criteres.component';
 import { ResultatComponent } from './resultat/resultat.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DynamicComponent } from './dynamic/dynamic.component';
+import { HelloWorldComponent } from './hello-world/hello-world.component';
+import { WidgetHostDirective } from './dynamic/widget-host.directive';
 
 @NgModule({
   imports:      [ 
@@ -26,8 +28,14 @@ import { DynamicComponent } from './dynamic/dynamic.component';
       ToolbarComponent,
       CriteresComponent,
       ResultatComponent,
-      DynamicComponent
+      DynamicComponent,
+      HelloWorldComponent,
+      WidgetHostDirective
        ],
-  bootstrap:    [ AppComponent ]
+  exports: [
+    WidgetHostDirective
+       ],
+  bootstrap:    [ AppComponent ],
+  entryComponents: [HelloWorldComponent]
 })
 export class AppModule { }

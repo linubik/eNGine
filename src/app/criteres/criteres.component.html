@@ -4,6 +4,6 @@
 </ul>
 <ul>
 	<li *ngFor="let d of data">
-		<dynamicComponent [data]="d"></dynamicComponent>
+		<app-dynamic [data]="d">{{d.nom}}</app-dynamic>
 	</li>
 </ul>
