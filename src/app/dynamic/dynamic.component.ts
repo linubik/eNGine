@@ -11,7 +11,7 @@ export class DynamicComponent implements OnInit {
 
   @Input() data: Critere;
 
-  @ViewChild(WidgetHostDirective) widgetHostDirective:WidgetHostDirective;
+  @ViewChild(WidgetHostDirective, {static:true}) widgetHostDirective:WidgetHostDirective;
 
   constructor(private componentFactoryResolver:ComponentFactoryResolver) { }
 
