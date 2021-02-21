@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import { Critere } from './critere';
 
 /**
  * @title Criteres
@@ -8,5 +9,7 @@ import {Component} from '@angular/core';
   templateUrl: 'criteres.component.html',
   styleUrls: ['criteres.component.css'],
 })
-export class CriteresComponent {}
+export class CriteresComponent {
+  @Input() data : Critere;
+}
 

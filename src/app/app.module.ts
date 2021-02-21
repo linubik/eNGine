@@ -11,6 +11,7 @@ import { RouterModule } from '@angular/router';
 import { CriteresComponent } from './criteres/criteres.component';
 import { ResultatComponent } from './resultat/resultat.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DynamicComponent } from './dynamic/dynamic.component';
 
 @NgModule({
   imports:      [ 
@@ -24,7 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
       AppComponent, 
       ToolbarComponent,
       CriteresComponent,
-      ResultatComponent
+      ResultatComponent,
+      DynamicComponent
        ],
   bootstrap:    [ AppComponent ]
 })

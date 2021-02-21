@@ -2,3 +2,8 @@
 	<li><a [routerLink]="['/criteres/auto']">Auto</a></li>
 	<li><a [routerLink]="['/criteres/ha2']">HA2</a></li>
 </ul>
+<ul>
+	<li *ngFor="let d of data">
+		<dynamicComponent [data]="d"></dynamicComponent>
+	</li>
+</ul>
