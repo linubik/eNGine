@@ -7,7 +7,7 @@ import { Critere } from '../criteres/critere';
   nom {{data.nom}}
   label {{data.label}}`
 })
-export class HelloWorldComponent implements OnInit {
+export class GenericComponent implements OnInit {
 
 @Input() data: Critere;
 
