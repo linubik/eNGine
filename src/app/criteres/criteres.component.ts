@@ -1,16 +1,6 @@
 import {Component, Input} from '@angular/core';
 import { Critere } from './critere';
-
-const DATA = [
-  {
-    nom:'CritereAuto',
-    label:'AUT'
-  },
-  {
-    nom:'CritereHA2',
-    label:'HA2'
-  }
-]
+import { environment } from '../environment/environment';
 
 /**
  * @title Criteres
@@ -24,7 +14,7 @@ export class CriteresComponent {
   @Input() data : Critere[];
 
   ngOnInit() {
-    this.data = DATA;
+    this.data = environment.data;
   }
 }
 
