@@ -15,7 +15,7 @@ export class DynamicComponent implements OnInit {
   constructor(private componentFactoryResolver:ComponentFactoryResolver) { }
 
   private injectComponent() {
-    const componentFactory = this.componentFactoryResolver.resolveComponentFactory(HelloWorldComponent);
+    const componentFactory = this.componentFactoryResolver.resolveComponentFactory(this.data.component);
     const componentRef = this.widgetHostDirective.viewContainerRef.createComponent(componentFactory) as ComponentRef<CritereComponent>;
     componentRef.instance.data = this.data;
   }
