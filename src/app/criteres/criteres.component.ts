@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import { Critere } from './critere';
 import { environment } from '../environment/environment';
 
@@ -10,7 +10,7 @@ import { environment } from '../environment/environment';
   templateUrl: 'criteres.component.html',
   styleUrls: ['criteres.component.css'],
 })
-export class CriteresComponent {
+export class CriteresComponent implements OnInit {
   @Input() data : Critere[];
 
   ngOnInit() {
