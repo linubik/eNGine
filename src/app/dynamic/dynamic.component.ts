@@ -1,7 +1,6 @@
 import { Component, OnInit, Input, ViewChild, ComponentFactoryResolver } from '@angular/core';
 import { Critere } from '../criteres/critere';
 import { WidgetHostDirective } from './widget-host.directive';
-import { HelloWorldComponent } from '../hello-world/hello-world.component';
 
 @Component({
   selector: 'app-dynamic',
@@ -17,7 +16,7 @@ export class DynamicComponent implements OnInit {
 
   private injectComponent() {
     const componentFactory = this.componentFactoryResolver.resolveComponentFactory(HelloWorldComponent);
-    const componentRef = this.widgetHostDirective.viewContainerRef.createComponent(componentFactory);
+    const componentRef = this.widgetHostDirective.viewContainerRef.createComponent(componentFactory) as ComponentRef<CritereComponent>;
     componentRef.instance.data = this.data;
   }
 
