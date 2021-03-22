@@ -8,5 +8,5 @@ import {CritereComponent} from '../critere.component';
   templateUrl: 'critere.auto.component.html',
   styleUrls: ['critere.auto.component.css'],
 })
-export class CritereAutoComponent extends CriterComponent {}
+export class CritereAutoComponent extends CritereComponent {}
 
