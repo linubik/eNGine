@@ -13,6 +13,7 @@ import { ResultatComponent } from './resultat/resultat.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DynamicComponent } from './dynamic/dynamic.component';
 import { WidgetHostDirective } from './dynamic/widget-host.directive';
+import { PrettyPrintPipe } from './pretty-print.pipe';
 
 @NgModule({
   imports:      [ 
@@ -28,7 +29,8 @@ import { WidgetHostDirective } from './dynamic/widget-host.directive';
       CriteresComponent,
       ResultatComponent,
       DynamicComponent,
-      WidgetHostDirective
+      WidgetHostDirective,
+      PrettyPrintPipe
        ],
   exports: [
     WidgetHostDirective

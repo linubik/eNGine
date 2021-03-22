@@ -1,1 +1,7 @@
 Auto Component {{data.nom}} {{data.label}}
+{{data | prettyprint}}
+<ul>
+  <li *ngFor="let d of data.criteres">
+  {{d.libelle}}
+  </li>
+</ul>

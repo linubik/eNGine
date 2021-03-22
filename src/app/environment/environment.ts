@@ -5,9 +5,17 @@ export const environment = {
   production:false,
   data: [
     {
-      nom:'CritereAuto',
-      label:'AUT',
-      component:CritereAutoComponent
+      nom : 'CritereAuto',
+      label : 'AUT',
+      component : CritereAutoComponent,
+      criteres : [{
+        libelle : "Contrat Vivant",
+        type : "boolean"
+      },
+      {
+        libelle : "Bonus KM",
+        type : "number"
+      }]
     },
     {
       nom:'CritereHA2',
