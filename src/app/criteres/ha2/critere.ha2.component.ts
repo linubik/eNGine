@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {CritereComponent} from '../critere.component';
 
 /**
  * @title Critere HA2
@@ -8,5 +9,5 @@ import {Component} from '@angular/core';
   templateUrl: 'critere.ha2.component.html',
   styleUrls: ['critere.ha2.component.css'],
 })
-export class CritereHA2Component {}
+export class CritereHA2Component extends CritereComponent {}
 
