@@ -1,4 +1,4 @@
-import {GenericComponent} from '../generic/generic.component';
+import {CritereComponent} from './critere.component';
 
 interface Combo{
   nom : string;
@@ -9,6 +9,6 @@ interface Combo{
 export interface Critere {
   nom : string;
   label : string;
-  component: GenericComponent;
+  component: CritereComponent;
   combos ? : Combo[];
 }
