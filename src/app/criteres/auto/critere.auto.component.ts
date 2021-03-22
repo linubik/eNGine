@@ -1,5 +1,7 @@
-import {Component} from '@angular/core';
+import {Component,Input} from '@angular/core';
 import {CritereComponent} from '../critere.component';
+import {Critere} from '../critere';
+
 /**
  * @title Critere Auto
  */
@@ -8,5 +10,7 @@ import {CritereComponent} from '../critere.component';
   templateUrl: 'critere.auto.component.html',
   styleUrls: ['critere.auto.component.css'],
 })
-export class CritereAutoComponent extends CritereComponent {}
+export class CritereAutoComponent extends CritereComponent {
+  @Input() data: Critere;
+}
 
