@@ -9,6 +9,6 @@ interface Combo{
 export interface Critere {
   nom : string;
   label : string;
-  component: CritereComponent;
+  component ? : any;
   combos ? : Combo[];
 }
