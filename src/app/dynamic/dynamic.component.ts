@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, ViewChild, ComponentFactoryResolver, ComponentRef } from '@angular/core';
 import { Critere } from '../criteres/critere';
+import { CritereComponent } from '../criteres/critere.component';
 import { WidgetHostDirective } from './widget-host.directive';
 
 @Component({
